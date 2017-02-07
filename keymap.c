@@ -74,11 +74,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // SYMBOLS
 [SYMB] = KEYMAP(
        // left hand
-       KC_TRNS,KC_F1,     KC_F2,  KC_F3,  KC_F4,  KC_F5,  KC_TRNS,
-       KC_TRNS,S(KC_QUOT),KC_AT,  KC_LCBR,KC_RCBR,KC_PIPE,KC_TRNS,
-       KC_TRNS,KC_HASH,   KC_DLR, KC_LPRN,KC_RPRN,KC_GRV,
-       KC_TRNS,KC_PERC,   KC_CIRC,KC_LBRC,KC_RBRC,KC_TILD,KC_TRNS,
-       KC_TRNS,KC_TRNS,   KC_TRNS,KC_TRNS,KC_TRNS,
+       KC_TRNS,KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,  KC_TRNS,
+       KC_TRNS,KC_DQUO,KC_AT,  KC_LCBR,KC_RCBR,KC_PIPE,KC_TRNS,
+       KC_TRNS,KC_HASH,KC_DLR, KC_LPRN,KC_RPRN,KC_GRV,
+       KC_TRNS,KC_PERC,KC_CIRC,KC_LBRC,KC_RBRC,KC_TILD,KC_TRNS,
+       KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,
                                        KC_TRNS,KC_TRNS,
                                                KC_TRNS,
                                KC_TRNS,KC_TRNS,KC_TRNS,
@@ -97,7 +97,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,--------------------------------------------------.           ,--------------------------------------------------.
  * |        |      |      |      |      |      |      |           |      |      |      |      |      |      |        |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
- * |        |      |      | MsUp |      |      |      |           |      |      | Home |  Up  |  End |      |        |
+ * |        |      |PrvTab| MsUp |NxtTab|      |      |           |      |      | Home |  Up  |  End |      |        |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * |        |      |MsLeft|MsDown|MsRght|      |------|           |------|      | Left | Down | Right|      |  Play  |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
@@ -115,11 +115,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 // MEDIA AND MOUSE
 KEYMAP(
-       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-       KC_TRNS, KC_TRNS, KC_TRNS, KC_MS_U, KC_TRNS, KC_TRNS, KC_TRNS,
-       KC_TRNS, KC_TRNS, KC_MS_L, KC_MS_D, KC_MS_R, KC_TRNS,
-       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-       KC_TRNS, KC_TRNS, KC_TRNS, KC_BTN1, KC_BTN2,
+       KC_TRNS, KC_TRNS, KC_TRNS,       KC_TRNS, KC_TRNS,       KC_TRNS, KC_TRNS,
+       KC_TRNS, KC_TRNS, LGUI(KC_LCBR), KC_MS_U, LGUI(KC_RCBR), KC_TRNS, KC_TRNS,
+       KC_TRNS, KC_TRNS, KC_MS_L,       KC_MS_D, KC_MS_R,       KC_TRNS,
+       KC_TRNS, KC_TRNS, KC_TRNS,       KC_TRNS, KC_TRNS,       KC_TRNS, KC_TRNS,
+       KC_TRNS, KC_TRNS, KC_TRNS,       KC_BTN1, KC_BTN2,
                                            KC_TRNS, KC_TRNS,
                                                     KC_TRNS,
                                   KC_TRNS, KC_TRNS, KC_TRNS,
