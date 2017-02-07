@@ -23,8 +23,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        ,-------------.       ,---------------.
  *                                        | App  | LGui |       | Alt  |Ctrl/Esc|
  *                                 ,------|------|------|       |------+--------+------.
- *                                 |      |      | Exit |       |VolUp |        |      |
- *                                 | Space|  ~L1 |------|       |------|  Tab   |Enter |
+ *                                 |Space |      | Exit |       |VolUp |        |      |
+ *                                 |  SYMB| SYMB |------|       |------|  Tab   |Enter |
  *                                 |      |      |Irupt |       |VolDn |        |      |
  *                                 `--------------------'       `----------------------'
  */
