@@ -18,7 +18,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------| Undo |           | Kana |------+------+------+------+------+--------|
  * | LShift |:/Ctrl|   Q  |   J  |   K  |   X  |      |           |      |   B  |   M  |   W  |   V  |Z/Ctrl| RShift |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |Grv/L1| Copy | Paste| LAlt | LGui |                                       | RGui |   &  |   [  |   ]  |   ~    |
+ *   | Copy |Paste | Cut  | LAlt | LGui |                                       | RGui |   &  |   [  |   ]  |   ~    |
  *   `----------------------------------'                                       `------------------------------------'
  *                                        ,-------------.       ,---------------.
  *                                        | App  | LGui |       | Alt  |Ctrl/Esc|
@@ -32,14 +32,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // Otherwise, it needs KC_*
 [BASE] = KEYMAP(  // layer 0 : default
         // left hand
-        KC_ESC,         KC_1,           KC_2,    KC_3,   KC_4,   KC_5,   KC_LEFT,
-        KC_DELT,        KC_QUOT,        KC_COMM, KC_DOT, KC_P,   KC_Y,   LGUI(KC_S),
-        KC_BSPC,        KC_A,           KC_O,    KC_E,   KC_U,   KC_I,
-        KC_LSFT,        CTL_T(KC_SCLN), KC_Q,    KC_J,   KC_K,   KC_X,   RGUI(KC_Z),
-        LT(SYMB,KC_GRV),RGUI(KC_C),     RGUI(KC_V),  KC_LALT,KC_LGUI,
-                                              ALT_T(KC_APP),  KC_LGUI,
-                                                              KC_HOME,
-                                               KC_SPC,MO(SYMB), KC_END,
+        KC_ESC,         KC_1,           KC_2,      KC_3,   KC_4,   KC_5,   KC_LEFT,
+        KC_DELT,        KC_QUOT,        KC_COMM,   KC_DOT, KC_P,   KC_Y,   LGUI(KC_S),
+        KC_BSPC,        KC_A,           KC_O,      KC_E,   KC_U,   KC_I,
+        KC_LSFT,        CTL_T(KC_SCLN), KC_Q,      KC_J,   KC_K,   KC_X,   RGUI(KC_Z),
+        RGUI(KC_C),     RGUI(KC_V),     RGUI(KC_X),KC_LALT,KC_LGUI,
+                                                   ALT_T(KC_APP),  KC_LGUI,
+                                                                  KC_HOME,
+                                                   KC_SPC,MO(SYMB),KC_END,
         // right hand
          LCTL(KC_SPC),KC_6,   KC_7,   KC_8,   KC_9,   KC_0,             KC_BSLS,
          LGUI(KC_F),  KC_F,   KC_G,   KC_C,   KC_R,   KC_L,             KC_SLSH,
